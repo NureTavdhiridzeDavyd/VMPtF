@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Administrator",
+    "email": "admin@taskmanager.local",
+    "password": "admin123",
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "name": "Davyd Tavdhiridze",
+    "email": "davyd.tavdhiridze@nure.ua",
+    "password": "user123",
+    "role": "user"
+  }
+]

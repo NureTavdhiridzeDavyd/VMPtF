@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #edf3fb;
+  color: #10213f;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+.app {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+.topbar {
+  background: linear-gradient(135deg, #215bd6, #4d89ff);
+  color: white;
+  padding: 28px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 16px 40px rgba(33, 91, 214, 0.25);
+}
+
+.topbar h1 {
+  margin: 0 0 8px;
+}
+
+.topbar p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.user-panel {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.user-panel strong {
+  background: white;
+  color: #215bd6;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.user-panel button,
+.quick-login button,
+.link-button {
+  border: 0;
+  background: white;
+  color: #215bd6;
+  padding: 9px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  gap: 12px;
+  margin: 22px 0;
+  flex-wrap: wrap;
+}
+
+.navigation a,
+.actions a,
+.actions button,
+.primary-button {
+  text-decoration: none;
+  border: 0;
+  color: #0d4bc8;
+  background: #e4edff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.primary-button {
+  background: #215bd6;
+  color: white;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.auth-card,
+.panel,
+.task-card,
+.stat-card {
+  background: white;
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: 0 14px 30px rgba(16, 33, 63, 0.08);
+}
+
+.auth-card {
+  max-width: 520px;
+  margin: 40px auto;
+}
+
+.quick-login {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+}
+
+.form label {
+  display: grid;
+  gap: 6px;
+  font-weight: 700;
+}
+
+.form input,
+.form textarea,
+.form select {
+  border: 1px solid #ccd8ee;
+  border-radius: 12px;
+  padding: 12px;
+  background: #f8fbff;
+}
+
+.form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.link-button {
+  margin-top: 14px;
+  background: transparent;
+}
+
+.page-title {
+  margin-bottom: 18px;
+}
+
+.page-title h2 {
+  margin-bottom: 6px;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 16px;
+}
+
+.task-card {
+  display: grid;
+  gap: 12px;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+}
+
+.task-header h3 {
+  margin: 0;
+}
+
+.badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  white-space: nowrap;
+  background: #e4edff;
+}
+
+.badge.done {
+  background: #e5f8eb;
+  color: #137333;
+}
+
+.badge.in_progress {
+  background: #fff2cc;
+  color: #8a5b00;
+}
+
+.badge.new {
+  background: #e4edff;
+  color: #0d4bc8;
+}
+
+.task-meta,
+.details-grid {
+  display: grid;
+  gap: 8px;
+  color: #4d5f7c;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.actions button {
+  color: #b00020;
+  background: #ffe8ec;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 14px;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 32px;
+  color: #215bd6;
+}
+
+.reminder-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.reminder-card {
+  background: #f8fbff;
+  border: 1px solid #d8e4f7;
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.reminder-card span {
+  display: inline-block;
+  margin-left: 10px;
+  background: #fff2cc;
+  border-radius: 999px;
+  padding: 4px 8px;
+}
+
+.error {
+  background: #ffe8ec;
+  color: #b00020;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.empty {
+  background: white;
+  padding: 18px;
+  border-radius: 16px;
+  color: #4d5f7c;
+}
+
+@media (max-width: 720px) {
+  .topbar,
+  .form-row {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

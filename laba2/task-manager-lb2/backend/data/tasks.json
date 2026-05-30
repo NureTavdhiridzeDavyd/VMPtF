@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Підготувати звіт до лабораторної роботи",
+    "description": "Описати структуру Node.js + Express + React застосунку та зробити скріншоти роботи.",
+    "status": "in_progress",
+    "priority": "high",
+    "deadline": "2026-05-29",
+    "userId": 2,
+    "createdAt": "2026-05-27T12:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "title": "Перевірити CRUD задач",
+    "description": "Перевірити створення, редагування, видалення і перегляд деталей задачі.",
+    "status": "new",
+    "priority": "medium",
+    "deadline": "2026-06-01",
+    "userId": 2,
+    "createdAt": "2026-05-27T12:10:00.000Z"
+  },
+  {
+    "id": 3,
+    "title": "Адміністративна перевірка ролей",
+    "description": "Переконатися, що адміністратор бачить усі задачі, а користувач тільки власні.",
+    "status": "done",
+    "priority": "low",
+    "deadline": "2026-05-25",
+    "userId": 1,
+    "createdAt": "2026-05-27T12:20:00.000Z"
+  },
+  {
+    "id": 4,
+    "title": "123",
+    "description": "тесттесттест",
+    "status": "done",
+    "priority": "high",
+    "deadline": "2026-05-28",
+    "userId": 2,
+    "createdAt": "2026-05-27T19:00:31.419Z"
+  }
+]
